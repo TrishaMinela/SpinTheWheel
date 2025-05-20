@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Spin the Wheel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎡 Spin the Wheel</h1>
+
+    <form id="addForm">
+      <input type="text" id="nameInput" placeholder="Enter name" autocomplete="off" />
+      <button type="submit" id="addBtn">Add</button>
+      <button type="submit" id="delBtn">Delete</button>
+      <button type="button" id="rewind">Rewind</button>
+    </form>
+
+    <button id="spinBtn" onclick="spin()">Spin!</button>
+    
+    <div class="wheel-container">
+      <canvas class="wheel" id="wheel" width="500" height="500"></canvas>
+      <div class="marker">▼</div>
+    </div>
+    
+    
+    <div id="result">Click to try your luck!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

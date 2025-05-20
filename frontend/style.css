@@ -1,0 +1,131 @@
+/* General CSS */
+body {
+  background: #ffeaa7;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* End General CSS */
+
+/* Wheel Container */
+.wheel-container {
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.marker {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: #d63031;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* End Wheel Container */
+
+
+/* Form Container */
+#result {
+  margin-top: 15px;
+  font-weight: bold;
+  min-height: 1.2em;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 8px 10px;
+  width: 180px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  caret-color: blue;
+}
+
+button#addBtn {
+  display: inline;
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-left: 6px;
+  cursor: pointer;
+  background: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button#delBtn {
+  display: inline;
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-left: 6px;
+  cursor: pointer;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button#rewind {
+  display: inline;
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-left: 6px;
+  margin: 20px auto;
+  cursor: pointer;
+  background: #e17055;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button#addBtn:hover {
+  background: #27ae60;
+}
+
+button#rewind:hover {
+  background: #d63031;
+}
+
+button#delBtn:hover {
+  background: #c0392b;
+}
+/* End Form Container */
+
+
+/* Spin */
+#spinBtn {
+  padding: 8px 12px;
+  font-size: 2rem;
+  cursor: pointer;
+  background: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
